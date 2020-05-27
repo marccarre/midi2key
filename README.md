@@ -9,14 +9,12 @@ Configuration is currently hardcoded in the script.
 
 ## Setup
 
-### Prerequisites
-
 1. Install `python3`.
 2. Install `pip3`.
 3. Run `pip install --user pipenv`
 4. Run `pipenv install` to install 3rd party dependencies.
 
-### Usage
+## Usage
 
 ```console
 ./midi2key/midi2key.py
