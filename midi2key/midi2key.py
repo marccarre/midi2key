@@ -76,6 +76,7 @@ def listen_to(device_ids):
     finally:
         for device in devices:
             try_close(device)
+        midi.quit()
         print('Bye!')
 
 def try_close(device):
