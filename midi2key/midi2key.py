@@ -32,6 +32,9 @@ FREEDRUM = {
 def main():
     midi.init()
     device_ids = input_device_ids()
+    if not device_ids:
+        print('No MIDI input devices.', file=sys.stderr)
+        sys.exit(1)
     print_devices_info(device_ids)
     listen_to(device_ids)
 
